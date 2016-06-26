@@ -1,0 +1,239 @@
+---
+layout: default
+---
+<div class="home">
+    <div class="container">
+        <div class="map">
+            <div class="stop">
+                <div class="logo">
+                </div>
+                <div class="logo-right">
+                    Tokyo JS<br>
+                    <span data-name="date">?</span> 19:00
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="left-side">
+                </div>
+                <div class="line"></div>
+                <div class="right-side">
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="left-side">
+                    Today
+                </div>
+                <div class="line dot"></div>
+                <div class="right-side">
+                    <div class="station-subtitle">
+                        If you want to attend,
+                    </div>
+                    <div class="station-title">
+                        <a href="http://www.meetup.com/tokyojs/">RSVP</a> and tell your friends
+                    </div>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="left-side">
+                    <span id="days">?</span> Days
+                </div>
+                <div class="line dot"></div>
+                <div class="right-side">
+                    <div class="station-subtitle">
+                        Do nothing but
+                    </div>
+                    <div class="station-title">
+                        Wait patiently.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="stop">
+                <div class="left-side">
+                    <span data-name="date">?</span>
+                </div>
+                <div class="line dot"></div>
+                <div class="right-side">
+                    <div class="station-subtitle">
+                        Make your way to
+                    </div>
+                    <div class="station-title">
+                        the undecided Venue.
+                    </div>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="left-side">
+                    19:00
+                </div>
+                <div class="line dot"></div>
+                <div class="right-side">
+                    <div class="station-subtitle">
+                        Listen to the 1st speaker, or
+                    </div>
+                    <div class="station-title">
+                        <a href="https://github.com/tokyojs/tokyojs.github.io/blob/master/SPEAKERS.md">BE THE 1ST
+                            SPEAKER!</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="left-side">
+                    19:30
+                </div>
+                <div class="line dot"></div>
+                <div class="right-side">
+                    <div class="station-subtitle">
+                        Listen to the 2nd speaker, or
+                    </div>
+                    <div class="station-title">
+                        <a href="https://github.com/tokyojs/tokyojs.github.io/blob/master/SPEAKERS.md">BE THE
+                            2<sup>nd</sup> SPEAKER!</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="left-side">
+                    20:00
+                </div>
+                <div class="line dot"></div>
+                <div class="right-side">
+                    <div class="station-subtitle">
+                        Listen to the 3rd speaker, or
+                    </div>
+                    <div class="station-title">
+                        <a href="https://github.com/tokyojs/tokyojs.github.io/blob/master/SPEAKERS.md">BE THE
+                            3<sup>rd</sup> SPEAKER!</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="left-side">
+                    20:30
+                </div>
+                <div class="line dot"></div>
+                <div class="right-side">
+                    <div class="station-subtitle">
+                        Listen to the 4th speaker, or
+                    </div>
+                    <div class="station-title">
+                        <a href="https://github.com/tokyojs/tokyojs.github.io/blob/master/SPEAKERS.md">BE THE
+                            4<sup>th</sup> SPEAKER!</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="left-side">
+                    21:00
+                </div>
+                <div class="line dot"></div>
+                <div class="right-side">
+                    <div class="station-title">
+                        Grab some drinks at the local bar.
+                    </div>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="left-side">
+                </div>
+                <div class="line"></div>
+                <div class="right-side">
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="left-side">
+                    Next time
+                </div>
+                <div class="line dot"></div>
+                <div class="right-side">
+                    <div class="station-subtitle">
+                    </div>
+                    <div class="station-title">
+                        <a href="/sponsors">Be our next
+                            sponsor!</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="terminate"></div>
+            </div>
+        </div>
+        <div class="text">
+            More information for <a href="/attendees">attendees</a>, <a href="/speakers">speakers</a> and <a href="/sponsors">sponsors</a>.
+        </div>
+        <div class="text">
+            Thanks to <a href="http://brooklynjs.com/">BrooklynJS</a> for the inspiration.
+        </div>
+    </div>
+</div>
+<script>
+
+    var DAYS = [
+            'Sunday',
+            'Monday',
+            'Tuesday',
+            'Wednesday',
+            'Thursday',
+            'Friday',
+            'Saturday'
+    ];
+
+    var MONTHS = [
+            'January',
+            'February',
+            'March',
+            'April',
+            'May',
+            'June',
+            'July',
+            'August',
+            'September',
+            'October',
+            'November',
+            'December'
+    ];
+
+    function getOrdinal (n) {
+
+        var s   = ['th', 'st', 'nd', 'rd'];
+        var v   = n % 100;
+
+        return (s[(v-20)%10]||s[v]||s[0]);
+
+    }
+
+    function getPrettyDate (date) {
+
+        var day     = DAYS[date.getDay()];
+        var month   = MONTHS[date.getMonth()];
+        var ordinal = getOrdinal(date.getDate());
+
+        return day + ', ' + month + ' ' + date.getDate() + ordinal;
+
+    }
+
+    var nextDate = new Date('2016/07/28 19:00+09');
+    var msInDay  = 1000 * 60 * 60 * 24;
+
+    var daysElm  = document.getElementById('days');
+    var datesElm = document.querySelectorAll('[data-name="date"]');
+
+    for (var i = 0, l = datesElm.length; i < l; i += 1) {
+        datesElm[i].textContent = getPrettyDate(nextDate);
+    }
+
+    daysElm.textContent = Math.floor((nextDate.getTime() - Date.now()) / msInDay)
+
+</script>

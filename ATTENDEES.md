@@ -1,4 +1,7 @@
-## Speakers FAQ
+---
+layout: page
+title: Attendees FAQ
+---
 
 ### I am not a JavaScript programmer, can I join?
 Yes! Everyone regardless of skill level is free to join TokyoJS

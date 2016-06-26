@@ -1,4 +1,7 @@
-## Speakers FAQ
+---
+layout: page
+title: Speakers FAQ
+---
 
 ### Who can submit talks to TokyoJS?
 Everyone. Whether you're a seasoned veteran or you're looking to hold your first talk: we want to hear what you're excited about.

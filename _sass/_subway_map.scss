@@ -1,0 +1,112 @@
+.stop {
+  height: 80px;
+  width: $content-width;
+  position: relative;
+  box-sizing: border-box;
+
+  &:first-child {
+    margin-bottom: -5px;
+  }
+
+  /*
+  Top of the page
+  */
+  .logo {
+    background-image: url('/img/logo.svg');
+    background-size: 100%;
+    height: 80px;
+    width: 80px;
+    margin-left: 100px;
+    position: absolute;
+  }
+
+  .logo-right {
+    position: absolute;
+    font-weight: 700;
+    width: 400px;
+    right: 0;
+    top: 12px;
+    font-size: 1.4em;
+  }
+
+  /*
+  Left side text for dates
+  */
+  .left-side {
+    width: 130px;
+    text-align: right;
+    transform: rotate(35deg);
+    transform-origin: center right;
+    padding: 16px;
+    top: -12px;
+  }
+
+  /*
+  Yellow center line
+  */
+  .line {
+    height: 100%;
+    background-color: $js-jellow;
+    width: 20px;
+    margin-left: 130px;
+    position: absolute;
+  }
+
+  /*
+  Station dot
+  */
+  .line.dot:after {
+    content: '';
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    display: block;
+    border-radius: 7px;
+    left: 3px;
+    top: 4px;
+    position: absolute;
+  }
+
+  /*
+  Right side of the line
+  */
+  .right-side {
+    padding: 0 16px;
+    width: 450px;
+    right: 0;
+
+    .station-subtitle {
+      font-size: 0.9em;
+      position: absolute;
+      bottom: 0;
+    }
+
+    .station-title {
+      font-weight: 700;
+      font-size: 1.1em;
+      position: absolute;
+      top: 0;
+    }
+
+  }
+
+  .left-side,
+  .right-side {
+    position: absolute;
+    box-sizing: border-box;
+  }
+
+  /*
+  Line terminator
+  */
+  .terminate {
+    width: 20px;
+    height: 20px;
+    background-color: $js-jellow;
+    display: block;
+    border-radius: 10px;
+    top: -10px;
+    position: absolute;
+    margin-left: 130px;
+  }
+}

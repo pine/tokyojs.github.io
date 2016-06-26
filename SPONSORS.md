@@ -1,5 +1,7 @@
-## Sponsors FAQ
-
+---
+layout: page
+title: Sponsors FAQ
+---
 TBD
 
 ### In return you'll get
