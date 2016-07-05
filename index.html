@@ -66,82 +66,45 @@ layout: default
                     </div>
                 </div>
             </div>
-
+            
             <div class="stop">
                 <div class="left-side">
-                    19:00
                 </div>
-                <div class="line dot"></div>
+                <div class="line"></div>
                 <div class="right-side">
-                    <div class="station-subtitle">
-                        Listen to the 1st speaker, or
-                    </div>
-                    <div class="station-title">
-                        <a href="https://github.com/tokyojs/tokyojs.github.io/blob/master/SPEAKERS.md">BE THE 1ST
-                            SPEAKER!</a>
-                    </div>
                 </div>
             </div>
-
-            <div class="stop">
-                <div class="left-side">
-                    19:30
-                </div>
-                <div class="line dot"></div>
-                <div class="right-side">
-                    <div class="station-subtitle">
-                        Listen to the 2nd speaker, or
-                    </div>
-                    <div class="station-title">
-                        <a href="https://github.com/tokyojs/tokyojs.github.io/blob/master/SPEAKERS.md">BE THE
-                            2<sup>nd</sup> SPEAKER!</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="stop">
-                <div class="left-side">
-                    20:00
-                </div>
-                <div class="line dot"></div>
-                <div class="right-side">
-                    <div class="station-subtitle">
-                        Listen to the 3rd speaker, or
-                    </div>
-                    <div class="station-title">
-                        <a href="https://github.com/tokyojs/tokyojs.github.io/blob/master/SPEAKERS.md">BE THE
-                            3<sup>rd</sup> SPEAKER!</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="stop">
-                <div class="left-side">
-                    20:30
-                </div>
-                <div class="line dot"></div>
-                <div class="right-side">
-                    <div class="station-subtitle">
-                        Listen to the 4th speaker, or
-                    </div>
-                    <div class="station-title">
-                        <a href="https://github.com/tokyojs/tokyojs.github.io/blob/master/SPEAKERS.md">BE THE
-                            4<sup>th</sup> SPEAKER!</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="stop">
-                <div class="left-side">
-                    21:00
-                </div>
-                <div class="line dot"></div>
-                <div class="right-side">
-                    <div class="station-title">
-                        Grab some drinks at the local bar.
-                    </div>
-                </div>
-            </div>
+            
+            <!-- Speaker block -->
+            {% include metro-stop.html 
+                title="<a href=\"/speakers/\">BE THE 1st SPEAKER!</a>" 
+                subtitle="Listen to the 1st speaker, or" 
+                time="19:00"
+            %}
+            
+            {% include metro-stop.html 
+                title="<a href=\"/speakers/\">BE THE 2nd SPEAKER!</a>"
+                subtitle="Listen to the 2nd speaker, or" 
+                time="19:30" 
+            %}
+            
+            {% include metro-stop.html 
+                title="<a href=\"/speakers/\">BE THE 3rd SPEAKER!</a>" 
+                subtitle="Listen to the 3rd speaker, or" 
+                time="20:00"
+            %}
+            
+            {% include metro-stop.html 
+                title="<a href=\"/speakers/\">BE THE 4th SPEAKER!</a>" 
+                subtitle="Listen to the 4th speaker, or" 
+                time="20:30"
+            %}
+            
+            <!-- drinking advice -->
+            {% include metro-stop.html 
+                title="Grab some drinks at the local bar" 
+                time="21:00"
+            %}
 
             <div class="stop">
                 <div class="left-side">
@@ -171,7 +134,7 @@ layout: default
             </div>
         </div>
         <div class="text">
-            More information for <a href="/attendees">attendees</a>, <a href="/speakers">speakers</a> and <a href="/sponsors">sponsors</a>.
+            More information for <a href="/attendees/">attendees</a>, <a href="/speakers/">speakers</a> and <a href="/sponsors/">sponsors</a>.
         </div>
         <div class="text">
             Thanks to <a href="http://brooklynjs.com/">BrooklynJS</a> for the inspiration.
