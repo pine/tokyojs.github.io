@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Sponsors FAQ
+permalink: /sponsors/
 ---
 TBD
 
