@@ -17,7 +17,7 @@ A non-comprehensive list:
 
 ### How do I submit talks to TokyoJS?
 Create a new issue [here](https://github.com/tokyojs/tokyojs.github.io/issues). If you don't know how to create an issue 
-take a look at some of the open issues tagged "Speaker Registration" or take a look at the [sample issue](https://github.com/tokyojs/tokyojs.github.io/issues/3]). 
+take a look at some of the open issues tagged "Speaker Registration" or take a look at the [sample issue](https://github.com/tokyojs/tokyojs.github.io/issues/3). 
 
 We go through the list roughly 2 weeks before the meet-up, and will 
 generally choose topics that create a diverse as possible evening of talks. 
