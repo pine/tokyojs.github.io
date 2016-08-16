@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Attendees FAQ
-permalink: /speakers/
+permalink: /attendees/
 ---
 
 ### I am not a JavaScript programmer, can I join?
