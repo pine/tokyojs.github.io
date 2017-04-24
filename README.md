@@ -1,11 +1,11 @@
 [slack-link]: https://tokyojs.herokuapp.com
 [slack-badge]: https://tokyojs.herokuapp.com/badge.svg
 [jekyll]: https://jekyllrb.com
-[tokyojs.com]: http://tokyojs.com
+[tokyo.js.org]: http://tokyo.js.org
 
 [![Slack][slack-badge]][slack-link]
 
-# [tokyojs.com]
+# [tokyo.js.org]
 
 Make sure to install [Jekyll][jekyll].
 
